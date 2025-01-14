@@ -14,11 +14,11 @@
     "typecheck": "tsc --noEmit",
     "clean": "git clean -xdf node_modules dist",
     "prepare": "husky",
-    "db:migrate": "prisma migrate dev",
     "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
     "db:seed": "prisma db seed",
-    "db:studio": "prisma studio",
-    "db:generate": "prisma generate"
+    "db:studio": "prisma studio"
   },
   "prisma": {
     "seed": "pnpm vite-node prisma/seed.ts"
